@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f2f5f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo h1 {
+    color:hsl(5, 85%, 63%);
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.login-box {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 0.9rem;
+    color: #555;
+    text-align: left;
+}
+
+input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #fff;
+    background-color: hsl(5, 85%, 63%);
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: hsl(5, 67%, 52%);
+}
+
+.oauth-button {
+    background-color: #fff;
+    color: #555;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.oauth-button img {
+    width: 20px;
+}
+
+.signup-button {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: black;
+    width: 100%;
+}
+
+.signup-button:hover {
+    background-color: #fff;
+    border: 1px solid hsl(5, 85%, 63%);
+    color: hsl(5, 85%, 63%);
+}
+
+.or-divider {
+    position: relative;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.or-divider::before,
+.or-divider::after {
+    content: "";
+    position: absolute;
+    width: 45%;
+    height: 1px;
+    background-color: #ddd;
+    top: 50%;
+}
+
+.or-divider::before {
+    left: 0;
+}
+
+.or-divider::after {
+    right: 0;
+}
+
+.or-divider span {
+    background-color: #fff;
+    padding: 0 10px;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.forgot-password {
+    margin-top: 20px;
+}
+
+.forgot-password a {
+    font-size: 0.85rem;
+    color: hsl(5, 85%, 63%);
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}

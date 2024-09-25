@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f7fafc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+}
+
+.logo h1 {
+    color: hsl(5, 85%, 63%);
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.signup-box {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(55, 17, 17, 0.1);
+    text-align: center;
+    width: 100%;
+}
+
+.signup-box h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.signup-box p {
+    margin-bottom: 20px;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-size: 0.9rem;
+    color: #555;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+input:focus {
+    outline: none;
+    border-color: hsl(5, 85%, 63%);
+}
+
+.checkbox {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+.checkbox input {
+    margin-right: 10px;
+}
+
+.checkbox label {
+    font-size: 0.85rem;
+    color: #555;
+}
+
+.checkbox a {
+    color: hsl(5, 85%, 63%);
+    text-decoration: none;
+}
+
+.checkbox a:hover {
+    text-decoration: underline;
+}
+
+.signup-btn {
+    padding: 12px;
+    background-color: hsl(5, 85%, 63%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 15px;
+}
+
+.signup-btn:hover {
+    background-color: hsl(5, 80%, 57%);
+}
+
+.or-divider {
+    position: relative;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.or-divider::before,
+.or-divider::after {
+    content: "";
+    position: absolute;
+    width: 45%;
+    height: 1px;
+    background-color: #ddd;
+    top: 50%;
+}
+
+.or-divider::before {
+    left: 0;
+}
+
+.or-divider::after {
+    right: 0;
+}
+
+.or-divider span {
+    background-color: #fff;
+    padding: 0 10px;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.oauth-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #fff;
+    color: #555;
+    margin-top: 10px;
+}
+
+.oauth-btn img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.oauth-btn:hover {
+    background-color: #f0f5f3;
+}
+
+.test-info {
+    margin-top: 20px;
+    font-size: 0.85rem;
+    color: #555;
+}
+
+.test-info a {
+    color: hsl(5, 85%, 63%);
+    text-decoration: none;
+}
+
+.test-info a:hover {
+    text-decoration: underline;
+}
